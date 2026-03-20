@@ -1,0 +1,33 @@
+// let day = 1;
+// switch (day) {
+// case 1:
+//     console.log("Today is Monday");
+//     break;
+// case 2:
+//     console.log("Today is Tuesday");
+//     break;
+// case 3:
+//     console.log("Today is Wednesday");
+// default:
+//     console.log("Invalid day");
+// }
+
+let score = 80;
+let grade;
+switch (true) {
+  case score >= 90:
+    grade = "A";
+    break;
+  case score >= 80:
+    grade = "B";
+    break;
+  case score >= 70:
+    grade = "C";
+    break;
+  case score >= 60:
+    grade = "D";
+    break;
+  default:
+    grade = "F";
+}
+console.log(grade);

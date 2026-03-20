@@ -1,0 +1,23 @@
+body {
+  font-family: Verdana;
+  text-align: center;
+}
+#rollBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+}
+#myLabel {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.myLabel {
+  font-size: 24px;
+  margin-top: 20px;
+}
