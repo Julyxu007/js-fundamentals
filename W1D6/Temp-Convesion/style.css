@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: #eeecec;
+}
+h1 {
+  color: #a6beee;
+}
+form {
+  text-align: center;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#convertBtn {
+  background-color: #fa4b05;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#convertBtn:hover {
+  background-color: #f39671;
+}
+#tempInput {
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#redult {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
