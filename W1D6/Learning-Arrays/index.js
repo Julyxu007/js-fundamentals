@@ -32,7 +32,9 @@ for (let item of fruits){
 }
 
 fruits.sort();
-console.log(fruits); // ["apple", "banana", "grapes", "orange"]
+console.log(...fruits); // ["apple", "banana", "grapes", "orange"]
 
 fruits.sort().reverse();
 console.log(fruits); // ["orange", "grapes", "banana", "apple"]
+let food = [...fruits, "mango"];
+console.log(food); // ["orange", "grapes", "banana", "apple", "mango"]
