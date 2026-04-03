@@ -129,7 +129,7 @@
 // }
 
 //
-const numbers = [1, 2, 3, 4, 5, 6];
+// const numbers = [1, 2, 3, 4, 5, 6];
 // const squaredNumbers = numbers.map(square);
 // function square (element){
 //     return Math.pow (element,2)
@@ -151,11 +151,90 @@ const numbers = [1, 2, 3, 4, 5, 6];
 // }
 
 // use reduce to do this filter
-const evenNumbers = numbers.reduce(isEven, []);
+// const evenNumbers = numbers.reduce(isEven, []);
+// console.log(evenNumbers);
+// function isEven(acc, ele) {
+//   if (ele % 2 === 0) {
+//     acc.push(ele);
+//   }
+//   return acc;
+// }
+
+// function declaration = define a resusable block of code that peforms special task
+// function hello() {
+//   console.log("Hello World!");
+// }
+
+// function expression = define a function as a variable
+// const goodbye = function () {
+//   console.log("Goodbye World!");
+// };
+
+// hello();
+// goodbye();
+
+// passing a function as an value;
+//ussing function declaration as a callback function
+//setTimeout(goodbye, 3000);// call the function goodbye after 3 seconds
+
+// using the entire function expression as an argument
+
+// setTimeout(function(){console.log("Hello World!");}, 3000)
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// function square (element){
+//   return Math.pow(element,2)
+// }
+// numbers.map(square);
+
+//use function as an argument, because only need to use the function once,
+// and then throw it away, so it is called an anonymous function.
+// don't need a name.
+// const squaredNumbers = numbers.map(function (element) {
+//   return Math.pow(element, 2);
+// });
+// console.log(squaredNumbers);
+
+// const evenNumbers = numbers.filter(function (element) {
+//   return element % 2 === 0;
+// });
+// console.log(evenNumbers);
+
+// const addNumbers = numbers.reduce(function (acc, ele) {
+//   return acc + ele;
+// });
+// console.log(addNumbers);
+
+// arrow function = a function that is defined with the arrow keyword.
+// a consise way to write a function expression
+// it is a single line function that does not have a name function.
+// (parameters) => code
+
+// function hello(){
+//   console.log("Hello World!");
+// }
+// const hello = function(){
+//   console.log("Hello World!");
+// }
+// const hello = () => console.log("Hello World!");
+// hello()
+
+//  const hello = (username,age) => {console.log(`hello, ${username}`)
+//  console.log(`you are ${age} years old`)
+// }
+//  hello("julyx", 35)
+
+// setTimeout(()=>console.log("Hello World!"), 4000)
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const squaredNumbers = numbers.map((element) => Math.pow(element, 2));
+// don't need a return keyword and {} if the arrow function has only one line of code.
+console.log(squaredNumbers);
+
+const evenNumbers = numbers.filter((element) => element % 2 === 0);
 console.log(evenNumbers);
-function isEven(acc, ele) {
-  if (ele % 2 === 0) {
-    acc.push(ele);
-  }
-  return acc;
-}
+
+const totalnumbers = numbers.reduce((acc, ele) => {
+  return acc + ele;
+});
+console.log(totalnumbers);
