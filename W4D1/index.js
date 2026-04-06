@@ -194,3 +194,36 @@
 // const dayOfWeek = date.getDay();
 // date.setFullyear(2024);
 // date.setMonth(0); //0 is January
+
+
+//closure = A function that is defined inside of another function
+// the inner function has access to the outer function's variables
+// Allow for the private variables and state maintenance
+// Used frequently in JavaScript frameworks: React, Vue, Angular
+
+//  function outer(){
+//     let message = "Hello, World!";
+//     function inner(){
+//         console.log(message);
+//     }
+//     inner();
+//  }
+
+//  outer();
+
+
+
+
+
+function createCounter(){
+    let count = 0;
+function increment(){
+    let count = 0;
+    count++;
+    console.log(count);
+}
+return{increment}
+}
+
+const counter = createCounter();
+counter.increment();
