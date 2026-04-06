@@ -140,38 +140,57 @@
 //sort() = method used to sort elements of an array in place.
 // Sorts elements as strings in lexicographic order, not alphabetical
 //lexicographic = (alphabet+numbers+symbols)as strings
-let fruits = ["apple", "banana", "orange", "peach"];
-fruits.sort();
-let numbers = [2,6,3,10,5,9,7];
-numbers.sort();
-console.log(numbers); //[10,2,3,5,6,7,9]
-const sortedNumbers = numbers.sort((a,b)=> a-b);
-console.log(sortedNumbers); //[2,3,5,6,7,9,10]
+// let fruits = ["apple", "banana", "orange", "peach"];
+// fruits.sort();
+// let numbers = [2,6,3,10,5,9,7];
+// numbers.sort();
+// console.log(numbers); //[10,2,3,5,6,7,9]
+// const sortedNumbers = numbers.sort((a,b)=> a-b);
+// console.log(sortedNumbers); //[2,3,5,6,7,9,10]
 
-//can sort objects by giving property
-const people =  [{name:"July",age:35, gpa:3.5},
-                 {name:"Winter",age:30, gpa:3.8},
-                 {name:"Juli",age:25, gpa:3.2}
-                ]
-people.sort((a,b)=>(a.age-b.age));
-console.log(people);
+// //can sort objects by giving property
+// const people =  [{name:"July",age:35, gpa:3.5},
+//                  {name:"Winter",age:30, gpa:3.8},
+//                  {name:"Juli",age:25, gpa:3.2}
+//                 ]
+// people.sort((a,b)=>(a.age-b.age));
+// console.log(people);
 //if want to compare two properties that contain string, need 
 //to use the build in method localeCompare()
 
-people.sort((a,b)=>{a.name.localeCompare(b.name)});
+// people.sort((a,b)=>{a.name.localeCompare(b.name)});
 
-//shuffle an array
-const cards = ['A', 2,3,4,5,6,7,8,9,10,'J','Q','K','S'];
-// cards.sort(()=>Math.random()-0.5);
-// console.log(cards);
-//another way to shuffle an array
-// Fisher-Yates shuffle algorithm
+// //shuffle an array
+// const cards = ['A', 2,3,4,5,6,7,8,9,10,'J','Q','K','S'];
+// // cards.sort(()=>Math.random()-0.5);
+// // console.log(cards);
+// //another way to shuffle an array
+// // Fisher-Yates shuffle algorithm
 
-shuffleArray(cards)
+// shuffleArray(cards)
 
-function shuffleArray(array){
-for(let i = array.length-1; i>0;i--){
-    const randomNum = Math.floor(Math.random()*(i+1));
-    [array[i],array[randomNum]]=[array[randomNum],array[i]]
-}
-}
+// function shuffleArray(array){
+// for(let i = array.length-1; i>0;i--){
+//     const randomNum = Math.floor(Math.random()*(i+1));
+//     [array[i],array[randomNum]]=[array[randomNum],array[i]]
+// }
+// }
+
+//date objects=objects that contain values that represent dates
+//and times. These date objects can be changed and formatted.
+//Date (year,month,day,hour,minute,second,millisecond)
+// const date = new Date(2026,11,30,12,0,0,0);
+// console.log(date);
+
+// const date = new Date ("2026-12-31T12:00:00Z");
+
+// const year = date.getFullYear();
+// const month = date.getMonth();
+// const day = date.getDate();
+// const hour = date.getHours();
+// const minute = date.getMinutes();
+// const second = date.getSeconds();
+// const millisecond = date.getMilliseconds();
+// const dayOfWeek = date.getDay();
+// date.setFullyear(2024);
+// date.setMonth(0); //0 is January
