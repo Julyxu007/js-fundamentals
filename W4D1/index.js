@@ -215,15 +215,29 @@
 
 
 
-function createCounter(){
-    let count = 0;
-function increment(){
-    let count = 0;
-    count++;
-    console.log(count);
-}
-return{increment}
+// function createCounter(){
+//     let count = 0;
+// function increment(){
+//     let count = 0;
+//     count++;
+//     console.log(count);
+// }
+// return{increment}
+// }
+
+// const counter = createCounter();
+// counter.increment();
+
+
+//setTimeout()
+//setTimeout(callback,delay)
+
+
+function sayHello(){
+    console.log("hello")
 }
 
-const counter = createCounter();
-counter.increment();
+setTimeout(sayHello,3000);
+
+setTimeout(function(){window.alert("Hello")}, 3000)
+setTimeout(()=>{console.log("hello")},3000)
